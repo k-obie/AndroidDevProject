@@ -1,4 +1,4 @@
-package com.example.collisiondetection;
+package com.androiddev.project;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.collisiondetection", appContext.getPackageName());
+        assertEquals("com.androiddev.project", appContext.getPackageName());
     }
 }

@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.collisiondetection'
+    namespace 'com.androiddev.project'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.collisiondetection"
-        minSdk 33
+        applicationId "com.androiddev.project"
+        minSdk 22
         targetSdk 33
         versionCode 1
         versionName "1.0"

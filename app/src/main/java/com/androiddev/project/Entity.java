@@ -1,4 +1,4 @@
-package com.example.collisiondetection;
+package com.androiddev.project;
 
 import android.widget.ImageView;
 

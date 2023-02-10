@@ -1,4 +1,4 @@
-package com.example.collisiondetection;
+package com.androiddev.project;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -107,9 +107,9 @@ public class Game {
     private void moveUp(Entity entity) {
 
         if((player.sprite.getY() + MainActivity.GameSettings.GRID_SIZE == enemy.sprite.getY()) &&
-            (player.sprite.getX() == enemy.sprite.getX()) ||
-            (enemy.sprite.getY() + MainActivity.GameSettings.GRID_SIZE == player.sprite.getY()) &&
-            (enemy.sprite.getX() == player.sprite.getX())){
+                (player.sprite.getX() == enemy.sprite.getX()) ||
+                (enemy.sprite.getY() + MainActivity.GameSettings.GRID_SIZE == player.sprite.getY()) &&
+                        (enemy.sprite.getX() == player.sprite.getX())){
             Combat();
         }else if(!((entity.sprite.getY()) <= 0)) {
             entity.sprite.setY(entity.sprite.getY() - MainActivity.GameSettings.GRID_SIZE);
@@ -118,9 +118,9 @@ public class Game {
     private void moveDown(Entity entity) {
 
         if((player.sprite.getY() - MainActivity.GameSettings.GRID_SIZE == enemy.sprite.getY()) &&
-            (player.sprite.getX() == enemy.sprite.getX()) ||
-            (enemy.sprite.getY() - MainActivity.GameSettings.GRID_SIZE == player.sprite.getY())&&
-            (enemy.sprite.getX() == player.sprite.getX())){
+                (player.sprite.getX() == enemy.sprite.getX()) ||
+                (enemy.sprite.getY() - MainActivity.GameSettings.GRID_SIZE == player.sprite.getY())&&
+                        (enemy.sprite.getX() == player.sprite.getX())){
 
             Combat();
         }else if(!((entity.sprite.getY()) >= 1280)) {
@@ -129,9 +129,9 @@ public class Game {
     }
     private void moveRight(Entity entity) {
         if((player.sprite.getX() + MainActivity.GameSettings.GRID_SIZE == enemy.sprite.getX()) &&
-            (player.sprite.getY() == enemy.sprite.getY()) ||
-            (enemy.sprite.getX() + MainActivity.GameSettings.GRID_SIZE == player.sprite.getX()) &&
-            (player.sprite.getY() == enemy.sprite.getY()))
+                (player.sprite.getY() == enemy.sprite.getY()) ||
+                (enemy.sprite.getX() + MainActivity.GameSettings.GRID_SIZE == player.sprite.getX()) &&
+                        (player.sprite.getY() == enemy.sprite.getY()))
         {
             Combat();
         }else if(!(entity.sprite.getX() >=768)) {
@@ -142,9 +142,9 @@ public class Game {
     private void moveLeft(Entity entity) {
 
         if((player.sprite.getX() - MainActivity.GameSettings.GRID_SIZE == enemy.sprite.getX()) &&
-            (player.sprite.getY() == enemy.sprite.getY()) ||
-            (enemy.sprite.getX() - MainActivity.GameSettings.GRID_SIZE == player.sprite.getX()) &&
-            (player.sprite.getY() == enemy.sprite.getY()))
+                (player.sprite.getY() == enemy.sprite.getY()) ||
+                (enemy.sprite.getX() - MainActivity.GameSettings.GRID_SIZE == player.sprite.getX()) &&
+                        (player.sprite.getY() == enemy.sprite.getY()))
         {
 
             Combat();
@@ -209,7 +209,7 @@ public class Game {
 
         playerTextDisplay.postDelayed(new Runnable(){
             @Override
-                    public void run(){
+            public void run(){
                 playerTextDisplay.setVisibility(View.INVISIBLE);
                 enemyTextDisplay.setVisibility(View.INVISIBLE);
 
