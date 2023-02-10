@@ -1,4 +1,4 @@
-package com.androiddev.project;
+package com.example.collisiondetection;
 
 import org.junit.Test;
 
